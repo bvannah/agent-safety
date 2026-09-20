@@ -1,0 +1,23 @@
+{
+  "name": "agent-safety",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Shared agent command-safety guard for coding agents (Pi, OpenCode)",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "install:pi": "node scripts/install-pi.mjs",
+    "install:opencode": "node scripts/install-opencode.mjs",
+    "scan": "vite-node --script scripts/scan.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "0.85.1",
+    "@opencode-ai/plugin": "^1.18.29",
+    "@types/node": "^26.5.0",
+    "esbuild": "^0.28.2",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.7"
+  }
+}
